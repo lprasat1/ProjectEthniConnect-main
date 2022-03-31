@@ -17,4 +17,6 @@ public class Dish {
     private long dishId;
     private String dishName;
     private double dishPrice;
+    private String ingredients;
+    private String interestingFacts;
 }

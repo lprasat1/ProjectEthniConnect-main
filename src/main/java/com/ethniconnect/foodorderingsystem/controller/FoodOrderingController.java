@@ -42,7 +42,7 @@ public class FoodOrderingController {
         response.setZipCode(zipCode);
         return response;
     }
-  @PostMapping("/getMenu/{chefId}")
+  @GetMapping("/getMenu/{chefId}")
     public Response getMenuByChefId(@PathVariable long chefId) {
        /* response.setMenu(Arrays.asList(new Menu("Monday","Breakfast",Arrays.asList(new Dish("Cheese Omlette",5.99),
                 new Dish("Tortillas",3.99)))));*/

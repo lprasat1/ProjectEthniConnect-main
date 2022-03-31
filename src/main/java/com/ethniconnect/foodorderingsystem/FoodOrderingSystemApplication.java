@@ -49,17 +49,21 @@ public class FoodOrderingSystemApplication implements CommandLineRunner{
 		(Arrays.asList(new Menu(1,"Monday","Breakfast",Arrays.asList(new Dish(1,"Cheese Omlette",5.99),
 				new Dish(2,"Tortillas",3.99)))))
 
-		*/
-		Menu menu = new Menu();
-		menu.setMenuId(1);
+
+		// Menu menu = new Menu();
+		//menu.setMenuId(1);
 		menu.setDay("Monday");
 		List<Dish> dishList = new ArrayList<>();
-		Dish dish1 = new Dish(1,"Pizza",12,new Menu());
+		Dish dish1 = new Dish();
+	//	dish1.setDishId(1);
+		dish1.setDishName("Chicken Cheese Burger");
+		dish1.setDishPrice(12);
+		dishList.add(dish1);
 		menu.setDish(dishList);
 		menu.setMenuType("Dinner");
 		Chefs chefs = new Chefs();
 		chefs.setChefId(17);
-		menuRepository.save(menu);
+		menuRepository.save(menu);*/
 
 	}
 }
